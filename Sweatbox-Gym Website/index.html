@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MFitness reponsive webite build using HTML5, CSS3 and Javascript The complete layout of the page is build using grid layout and flexbox with some cool animations."
+    />
+    <title>Sweat Box - to a healthier start</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon.jpg" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="home">
+      <div class="container">
+        <nav class="header-navigation" aria-label="navigation">
+          <div class="logo"><span class="yellow">SWEAT</span>BOX</div>
+
+          <img
+            src="img/nav-icon.svg"
+            alt="navigation icon"
+            class="nav-icon"
+            width="30"
+            height="30"
+          />
+
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#courses">Courses</a>
+            </li>
+            <li>
+              <a href="#trainers">Trainers</a>
+            </li>
+            <li>
+              <a href="#contact">Email us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="section-hero">
+        <div class="container hero-box">
+          <div class="hero-content margin-bottom">
+            <h1 class="heading heading--1 margin-bottom">
+              To a healthier start
+            </h1>
+            <p class="description">
+              We Offer Strength Training, Cross fit, Aerobics classes,
+              Yoga And Much More
+            </p>
+          </div>
+          <div class="btn-group">
+            <a href="Registration.html"><button class="btn btn__primary margin-right margin-bottom">
+              Join us
+            </button></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="about">
+        <div class="about-box container">
+          <div class="about-box__content" data-aos="fade-up">
+            <h2 class="heading heading--2">
+              About Us
+            </h2>
+            <p>
+              At SweatBox, we believe that fitness and wellbeing are the cornerstones of a full and vibrant life.
+              we offer various courses within affordable prices. Professional trainers are available 24/7 to make
+               curated workout plans based on your health and requirement.
+                     </p>
+          </div>
+          <figure class="about-box__image" data-aos="fade-up">
+            <img
+              src="img/about-img-1.jpg"
+              alt="about-image-one"
+              width="350"
+              height="233"
+            />
+            <img
+              src="img/about-img-2.jpg"
+              alt="about-image-twwo"
+              width="350"
+              height="233"
+            />
+            <img
+              src="img/about-img-3.jpg"
+              alt="about-image-three"
+              width="420"
+              height="280"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION COURSES -->
+      <section class="section-courses" id="courses">
+        <div class="container courses-box" data-aos="fade-up">
+          <header class="courses-heading">
+            <h2 class="heading heading--2 underline">Our Courses</h2>
+            <p>
+              We offer various courses including strength training, crossfit, yoga, zumba etc. click below and register!
+            </p>
+          </header>
+
+          <article class="courses-content">
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-bodybuilding.jpg"
+                alt="body building course"
+                width="550"
+                height="550"
+              />
+
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                   Professional trainers assisting you in building your dream physique through strength training.
+                  </p>                  
+                </div>
+              </div>
+
+              <div class="class-card__title">Body Building</div>
+            </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-crossfit.jpg"
+                alt="cross fit course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    A high intensity fitness regimen curated specially for you.
+                  </p>                 
+                </div>
+              </div>
+              <div class="class-card__title">Cross Fit</div>
+            </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-gymnastic.jpg"
+                alt="gymnastic course"
+                width="550"
+                height="550"
+              />
+
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    A routine designed to develop strength, balance and body control.
+                  </p>                  
+                </div>
+              </div>
+
+              <div class="class-card__title">Gymnastics</div>
+            </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-zumba.jpg"
+                alt="fitness course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                   A fun approach to fitness by dancing to your favourite tunes!
+                  </p>                  
+                </div>
+              </div>
+              <div class="class-card__title">Zumba</div>
+            </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-yoga.jpg"
+                alt="fitness course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    Focuses on flexibility, stress reduction, mental and spiritual well-being.
+                  </p>                  
+                </div>
+              </div>
+              <div class="class-card__title">Yoga</div>
+            </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-boxing.jpg"
+                alt="fitness course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    High intensity training to improve strength, aerobic levels and cognitive skills.
+                  </p>                  
+                </div>
+              </div>
+              <div class="class-card__title">Boxing</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION OFFER -->
+      <section class="section-offer" id="offer">
+        <div class="offer-box">
+          <div class="offer" data-aos="fade-up">
+            <h2 class="heading heading--2 margin-bottom">
+              Special offer this summer get full Benefits for year with 20%
+              discount.
+            </h2>
+            <p class="margin-bottom">
+              Start your wellness journey this summer with exciting offers!!
+            </p>
+            <a href="Registration.html">
+            <button class="btn btn__primary">Become a member</button>
+            </a>
+          </div>
+
+          <div class="offer-img"></div>
+        </div>
+      </section>
+
+      <!-- SECTION COACHES -->
+      <section class="section-coaches" id="trainers">
+        <div class="container coaches-box" data-aos="fade-up">
+          <header class="coache-heading">
+            <h2 class="heading heading--2 underline margin-bottom">
+              OUR TRAINERS
+            </h2>
+            <p>
+              Certified professionals who identify your challenges and help you through your fitness journey.
+            </p>
+          </header>
+
+          <article class="coache-content">
+            <div class="c-card">
+              <img
+                src="img/coache-1.jpg"
+                alt="coache one"
+                class="c-card__img"
+                width="550"
+                height="550"
+              />
+
+              <div class="overlay">
+                <img
+                  src="./img/logo-whatsapp.svg"
+                  alt="whatsapp-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-facebook.svg"
+                  alt="facebook-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-twitter.svg"
+                  alt="twitter-icon"
+                  width="30"
+                  height="30"
+                />
+              </div>
+
+              <div class="c-card__content">
+                <p class="c-name">MARK BERTUL</p>
+                <p class="c-title">Body Building</p>
+              </div>
+            </div>
+
+            <div class="c-card">
+              <img
+                src="img/coache-2.jpg"
+                alt="coache one"
+                class="c-card__img"
+                width="550"
+                height="550"
+              />
+
+              <div class="overlay">
+                <img
+                  src="./img/logo-whatsapp.svg"
+                  alt="whatsapp-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-facebook.svg"
+                  alt="facebook-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-twitter.svg"
+                  alt="twitter-icon"
+                  width="30"
+                  height="30"
+                />
+              </div>
+
+              <div class="c-card__content">
+                <p class="c-name">serio mike</p>
+                <p class="c-title">Cardio Expert</p>
+              </div>
+            </div>
+
+            <div class="c-card">
+              <img
+                src="img/coache-3.jpg"
+                alt="coache three"
+                class="c-card__img"
+                width="550"
+                height="550"
+              />
+              <div class="overlay">
+                <img
+                  src="./img/logo-whatsapp.svg"
+                  alt="whatsapp-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-facebook.svg"
+                  alt="facebook-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width="30"
+                  height="30"
+                />
+
+                <img
+                  src="./img/logo-twitter.svg"
+                  alt="twitter-icon"
+                  width="30"
+                  height="30"
+                />
+              </div>
+
+              <div class="c-card__content">
+                <p class="c-name">SVEN MIEKE</p>
+                <p class="c-title">Fitness Coach</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION REVIEW -->
+      <section class="section-review" id="review">
+        <div class="review-box container" data-aos="fade-up">
+          <h2 class="heading heading--2 underline margin-bottom grid-center">
+            what people say
+          </h2>
+
+          <div class="review-card">
+            <img
+              src="img/review-img-1.jpg"
+              alt="user"
+              class="review-card__image"
+              width="100"
+              height="100"
+            />
+            <blockquote class="review-card__content">
+              <p class="text">
+                "Friendly trainers who helped me with my progress. It's a great environment to workout!"
+              </p>
+
+              <div class="name">Sachin Varma</div>
+            </blockquote>
+          </div>
+
+          <div class="review-card">
+            <img
+              src="img/review-img-2.jpg"
+              alt="user"
+              class="review-card__image"
+              width="100"
+              height="100"
+            />
+            <blockquote class="review-card__content">
+              <p class="text">
+                "Gave me all the professional advice to achieve all my dreams, i hope to be better than sachin varma someday"
+              </p>
+              <div class="name">Cbum</div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+      <section class="section-contact" id="contact">
+        <div class="contact-box">
+          <form class="form-grp" data-aos="fade-up">
+            <h2 class="heading heading--2 margin-bottom">
+              Get in <span class="yellow">Touch</span>
+            </h2>
+
+            <input type="text" class="form form__input" placeholder="Name" />
+            <input type="text" class="form form__input" placeholder="Email" />
+            <input type="text" class="form form__input" placeholder="Phone" />
+            <textarea
+              name="message"
+              cols="5"
+              rows="3"
+              class="form form__input"
+              placeholder="Message"
+            ></textarea>
+            <button class="btn btn__primary form-flex">Send &nbsp;</button>
+          </form>
+          <div id="mapid" data-aos="fade-up"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="margin-bottom"><span class="yellow">SWEAT</span>BOX</h2>
+
+          <ul class="contact-data">
+            <li class="location">Yapral, Hyderabad</li>
+            <li class="phone">+00 000 000 00</li>
+            <li class="email">Sweatbox@yahoo.com</li>
+            <li class="social">
+              <img
+                src="./img/logo-whatsapp.svg"
+                alt="whatsapp icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-facebook.svg"
+                alt="facebook icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-instagram.svg"
+                alt="instagram icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-twitter.svg"
+                alt="twitter icon"
+                width="35"
+                height="35"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="newsletter">
+          <div class="newsletter__title">News Letter</div>
+          <div class="newsletter__text">
+            signin to the newsletter and get daily updates!
+          </div>
+          <form class="newsletter__input">
+            <input type="text" class="form" placeholder="example@yahoo.com" />
+            <img
+              src="./img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="36"
+              height="36"
+            />
+          </form>
+        </div>
+
+        <div class="legel">
+          <p class="text">Copyright &copy; by G Varshini&nbsp;</p>
+          <a href="www.github.com/gvarshini-1306">
+            <img
+              src="img/github.svg"
+              alt="github"
+              class="github"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
