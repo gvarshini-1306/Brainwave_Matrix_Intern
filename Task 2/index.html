@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.remove('hidden');
+                } else {
+                    page.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('medications')">Medication Tracker</a></li>
+                <li><a href="#" onclick="showPage('communication')">Communication</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="page">
+            <h1>Welcome to Your Healthcare App</h1>
+            <img src="./img/img-2.jpg" alt="Healthcare Image">
+            <p>Track your medications, manage your appointments, and communicate with your healthcare providers.</p>
+        </section>
+        
+        <section id="medications" class="page hidden">
+            <h1>Medication Tracker</h1>
+            <ul id="medication-list"></ul>
+            <input type="text" id="medication-name" placeholder="Medication Name">
+            <input type="text" id="medication-dosage" placeholder="Dosage">
+            <button onclick="addMedication()">Add Medication</button>
+        </section>
+        
+        <section id="communication" class="page hidden">
+            <h1>Communication</h1>
+            <p>Contact your healthcare providers easily.</p>
+            <button>Call</button>
+            <button>Message</button>
+            <button>Video Call</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Healthcare App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addMedication() {
+            const name = document.getElementById('medication-name').value;
+            const dosage = document.getElementById('medication-dosage').value;
+            if (name && dosage) {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${name} - ${dosage}`;
+                document.getElementById('medication-list').appendChild(listItem);
+                document.getElementById('medication-name').value = '';
+                document.getElementById('medication-dosage').value = '';
+            }
+        }
+    </script>
+</body>
+</html>
