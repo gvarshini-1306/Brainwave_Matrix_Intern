@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Medication Schedule</h1>
+        <form id="medicationForm">
+            <div class="form-group">
+                <label for="medicationName">Medication Name:</label>
+                <input type="text" id="medicationName" name="medicationName" required>
+            </div>
+            <div class="form-group">
+                <label for="dosage">Dosage:</label>
+                <input type="text" id="dosage" name="dosage" required>
+            </div>
+            <div class="form-group">
+                <label for="scheduleDate">Schedule Date:</label>
+                <input type="date" id="scheduleDate" name="scheduleDate" required>
+            </div>
+            <div class="form-group">
+                <label for="scheduleTime">Schedule Time:</label>
+                <input type="time" id="scheduleTime" name="scheduleTime" required>
+            </div>
+            <button type="submit">Add Medication</button>
+        </form>
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById('medicationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Get form values
+            var medicationName = document.getElementById('medicationName').value;
+            var dosage = document.getElementById('dosage').value;
+            var scheduleDate = document.getElementById('scheduleDate').value;
+            var scheduleTime = document.getElementById('scheduleTime').value;
+
+            // Do something with the form data (e.g., send to server or process locally)
+            console.log('Medication Name:', medicationName);
+            console.log('Dosage:', dosage);
+            console.log('Schedule Date:', scheduleDate);
+            console.log('Schedule Time:', scheduleTime);
+
+            // Clear form fields after submission (optional)
+            document.getElementById('medicationForm').reset();
+        });
+    </script>
+</body>
+</html>
